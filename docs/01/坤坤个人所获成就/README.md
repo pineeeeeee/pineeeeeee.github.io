@@ -14,4 +14,4 @@
 蔡徐坤打篮球：http://jlh.125ks.cn/cxk/
 
 # 蔡先生荔枝MV：
-<video src="kun2.mp4" controls="controls" width="500" height="300"><ideo>
+<video src="kunkun.mp4" controls="controls" width="500" height="300"><ideo>
