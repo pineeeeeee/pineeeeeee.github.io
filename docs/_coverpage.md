@@ -1,6 +1,6 @@
 <!-- _coverpage.md -->
 
-![logo](kunk.jpg)
+![logo](kun.jpg)
 
 # Cai Xu Kun <small></small>
 
