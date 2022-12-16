@@ -176,11 +176,25 @@
         </div>
     </div>
 
-    <audio src="http://pinezys.top/wp-content/uploads/2022/12/郭顶-我们俩-1.mp3" loop="loop" controls="controls" autoplay="autoplay" hidden id="music"></audio>
+    <audio src="http://pinezys.top/wp-content/uploads/2022/12/郭顶-我们俩-1.mp3" loop="loop" controls="controls"
+        autoplay="autoplay" hidden id="music"></audio>
 
     <script>
         var myVid = document.getElementById("music");
         myVid.volume = 0.5;
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            setInterval("toggleSound()", 1);
+        }
+
+        function toggleSound() {
+            var music = document.getElementById("music");//获取ID  
+            if (music.paused) { //判读是否播放  
+                music.paused = false;
+                music.play(); //没有就播放 
+            }
+        }
     </script>
 
 </body>
