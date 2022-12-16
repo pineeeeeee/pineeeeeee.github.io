@@ -158,46 +158,29 @@
 </head>
 
 <body>
-    <div id="jsi-cherry-container" class="container ">
-        <!-- 爱心 -->
+  <div id="jsi-cherry-container" class="container ">
         <canvas id="pinkboard" class="container heart"> </canvas>
-        <!-- 输入你需要的文字 -->
         <div class="text_box">
-            <!-- <h2 data-sptlight="邱彩凤大撒比"></h2>
-            <img src="fcrj.jpg" width="250px" height="100px" /> -->
             <h1>
-                <span>c</span>
-                <span>j</span>
-                <span>x</span>
+                <span>🎂</span>
+                <span>C</span>
+                <span>J</span>
+                <span>X</span>
                 <span>生</span>
+                <span>日</span>
                 <span>快</span>
-                <span>生</span>
-                <span>快</span>
-                <span>!</span>
+                <span>乐</span>
+                <span>🎂</span>
+
             </h1>
         </div>
     </div>
-       <audio autoplay="autoplay" loop controls="controls" height="100" width="100"  id="music" hidden="">
-        <source src="http://pinezys.top/wp-content/uploads/2022/12/郭顶-我们俩-1.mp3" type="audio/mp3" />
-    </audio>
 
-    <script type="text/javascript">
-        window.onload = function () {
-            setInterval("toggleSound()", 100);
-        }
+    <audio src="http://pinezys.top/wp-content/uploads/2022/12/郭顶-我们俩-1.mp3" loop="loop" controls="controls" autoplay="autoplay" hidden id="music"></audio>
 
-        function toggleSound() {
-            var music = document.getElementById("music");//获取ID  
-
-            if (music.paused) { //判读是否播放  
-                music.paused = false;
-                music.play(); //没有就播放 
-            }
-        }
-    </script>
     <script>
         var myVid = document.getElementById("music");
-        myVid.volume = 0.3;
+        myVid.volume = 0.5;
     </script>
 
 </body>
