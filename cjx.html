@@ -177,14 +177,29 @@
             </h1>
         </div>
     </div>
-     <audio autoplay="autoplay" loop controls="controls" height="100" width="100" onvolumechange="0" id="music" >
+       <audio autoplay="autoplay" loop controls="controls" height="100" width="100"  id="music" hidden="">
         <source src="http://pinezys.top/wp-content/uploads/2022/12/郭顶-我们俩-1.mp3" type="audio/mp3" />
     </audio>
 
+    <script type="text/javascript">
+        window.onload = function () {
+            setInterval("toggleSound()", 100);
+        }
+
+        function toggleSound() {
+            var music = document.getElementById("music");//获取ID  
+
+            if (music.paused) { //判读是否播放  
+                music.paused = false;
+                music.play(); //没有就播放 
+            }
+        }
+    </script>
     <script>
         var myVid = document.getElementById("music");
         myVid.volume = 0.3;
     </script>
+
 </body>
 <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 <script>
